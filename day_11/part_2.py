@@ -1,4 +1,3 @@
-from typing import List
 from tqdm import tqdm
 from functools import lru_cache
 
@@ -10,7 +9,7 @@ def load_data(file_path):
     
     
 @lru_cache(maxsize=None)
-def apply_rules(stone: int, depth: int) -> List:
+def apply_rules(stone: int, depth: int) -> int:
 
     if depth == 0:
         return 1
